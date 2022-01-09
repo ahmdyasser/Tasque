@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    var list = ["a", "b", "c", "d", "a", "b", "c", "d", "a", "b", "c", "d"]
+    var list = ["a", "b", "c", "d", "a", "b", "c", "d", "a", "b", "c", "d", "d", "a", "b", "c", "d", "a", "b", "c", "d"]
     let defaults = UserDefaults.standard
     
     //MARK: - Add new item
@@ -65,6 +65,7 @@ class ViewController: UITableViewController {
         } else {
             tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
         }
+        tableView.cellForRow(at: indexPath).anim
         
     }
 }

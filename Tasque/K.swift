@@ -9,5 +9,4 @@ import Foundation
 
 struct K {
     static var cellId = "tasqueCell"
-    static var cellId = "tasqueCell"
 }
