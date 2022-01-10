@@ -23,10 +23,4 @@ class InfoViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    override func viewDidAppear(_ animated: Bool) {
-        
-
-        
-        
-    }
 }
