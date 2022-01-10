@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		96549223278C0AD20019CDCB /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96549222278C0AD20019CDCB /* InfoViewController.swift */; };
-		9654922C278C11700019CDCB /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 9654922B278C11700019CDCB /* screenshot.png */; };
 		96CE7BFF278A259C0012FC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE7BFE278A259C0012FC25 /* AppDelegate.swift */; };
 		96CE7C01278A259C0012FC25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE7C00278A259C0012FC25 /* SceneDelegate.swift */; };
 		96CE7C03278A259C0012FC25 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE7C02278A259C0012FC25 /* HomeViewController.swift */; };
@@ -42,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		96549222278C0AD20019CDCB /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		9654922B278C11700019CDCB /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = screenshot.png; path = ../../../../../../var/folders/cl/_hst22gs5tbgbz__lxws2fv00000gn/T/TemporaryItems/NSIRD_screencaptureui_O9XCS8/screenshot.png; sourceTree = "<group>"; };
 		96CE7BFB278A259C0012FC25 /* Tasque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CE7BFE278A259C0012FC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96CE7C00278A259C0012FC25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,7 +165,6 @@
 		96F91FC8278B1EDF00D65C01 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9654922B278C11700019CDCB /* screenshot.png */,
 				96CE7C0A278A259E0012FC25 /* Assets.xcassets */,
 				96CE7C0C278A259E0012FC25 /* LaunchScreen.storyboard */,
 			);
@@ -280,7 +277,6 @@
 			files = (
 				96CE7C0E278A259E0012FC25 /* LaunchScreen.storyboard in Resources */,
 				96CE7C0B278A259E0012FC25 /* Assets.xcassets in Resources */,
-				9654922C278C11700019CDCB /* screenshot.png in Resources */,
 				96CE7C06278A259C0012FC25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
