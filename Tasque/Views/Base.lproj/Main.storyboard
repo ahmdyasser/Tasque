@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X3e-PZ-i0d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3JU-z3-thX">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Tasque-->
         <scene sceneID="v4r-up-CIi">
             <objects>
-                <tableViewController id="Gj2-3b-RZS" customClass="ViewController" customModule="Tasque" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Gj2-3b-RZS" customClass="HomeViewController" customModule="Tasque" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" springLoaded="YES" id="YoV-db-rGz">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,6 +32,9 @@
                             <outlet property="delegate" destination="Gj2-3b-RZS" id="sy4-34-lVq"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" id="P0s-Ix-MVB">
+                        <imageReference key="image" image="house" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Tasque" id="qET-0j-qwd">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="cHs-Xd-wOQ">
                             <color key="tintColor" name="blueColor"/>
@@ -41,12 +46,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZX-H8-c6g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1276.8115942028987" y="-593.30357142857144"/>
+            <point key="canvasLocation" x="2000" y="-594.31279620853081"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WAX-Jk-hPB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X3e-PZ-i0d" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="kXZ-3P-ins"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="OMD-kQ-ToU">
                         <rect key="frame" x="0.0" y="44" width="390" height="96"/>
@@ -61,26 +67,86 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Gj2-3b-RZS" kind="relationship" relationship="rootViewController" id="OdM-ht-fLW"/>
+                        <segue destination="Gj2-3b-RZS" kind="relationship" relationship="rootViewController" id="FNL-9E-o0e"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V4Q-3H-TMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="366.66666666666669" y="-593.30357142857144"/>
+            <point key="canvasLocation" x="1295.3846153846152" y="-593.60189573459718"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="KRz-dd-wAH">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7v-56-q7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3JU-z3-thX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hgT-eN-vIZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="lighterCellColor"/>
+                        <color key="barTintColor" name="blueColor"/>
+                        <color key="selectedImageTintColor" name="textColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="X3e-PZ-i0d" kind="relationship" relationship="viewControllers" id="OIi-6B-tqd"/>
+                        <segue destination="eLf-LS-67G" kind="relationship" relationship="viewControllers" id="Bxz-lK-hEz"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="366.15384615384613" y="-593.60189573459718"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="OlV-v1-AaV">
+            <objects>
+                <viewController id="eLf-LS-67G" customClass="InfoViewController" customModule="Tasque" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QSn-G1-vlU">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pFQ-Di-Oip">
+                                <rect key="frame" x="16" y="231" width="358" height="530"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut   enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea commodo consequat. Duis aute irure </mutableString>
+                                <color key="textColor" name="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Welcome to Tasque!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LbJ-VV-9kq">
+                                <rect key="frame" x="16" y="82" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" name="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MJc-Xa-JsT"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="FRr-U0-M8X">
+                        <imageReference key="image" image="info.circle" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLp-xM-gnT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1293.8461538461538" y="115.87677725118483"/>
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <namedColor name="backgroundColor">
+            <color red="0.082000002264976501" green="0.086000002920627594" blue="0.082000002264976501" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <namedColor name="blueColor">
-            <color red="0.2466354966" green="0.5515249968" blue="0.63923048969999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.24699999392032623" green="0.55199998617172241" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="cellColor">
-            <color red="0.2037234902" green="0.1962881088" blue="0.18038967249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.20399999618530273" green="0.19599999487400055" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="lighterCellColor">
-            <color red="0.30933353299999999" green="0.29070156809999997" blue="0.25097388030000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.30899998545646667" green="0.29100000858306885" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="textColor">
-            <color red="0.74754714970000002" green="0.67998737099999995" blue="0.55291885139999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.74800002574920654" green="0.68000000715255737" blue="0.55299997329711914" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

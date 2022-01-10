@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class HomeViewController: UITableViewController {
     
     let defaults = UserDefaults.standard
     
@@ -18,7 +18,7 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let newItem = Item(title: "kill yourself", done: false)
+        let newItem = Item(title: "buy the milk", done: false)
         itemArray.append(newItem)
         
         if let items = defaults.array(forKey: "TodoListArray") as? [Item] {
