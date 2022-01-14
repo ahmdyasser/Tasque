@@ -18,4 +18,5 @@ struct K {
         static var lightCell = "lighterCellColor"
         static var text = "textColor"
     }
+    
 }

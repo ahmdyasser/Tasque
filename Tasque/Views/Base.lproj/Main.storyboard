@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="Gj2-3b-RZS" id="sy4-34-lVq"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" id="P0s-Ix-MVB">
+                    <tabBarItem key="tabBarItem" title="Home" id="P0s-Ix-MVB">
                         <imageReference key="image" image="house" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" title="Tasque" id="qET-0j-qwd">
@@ -77,10 +77,10 @@
         <!--Tab Bar Controller-->
         <scene sceneID="KRz-dd-wAH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G7v-56-q7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3JU-z3-thX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hgT-eN-vIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="lighterCellColor"/>
                         <color key="barTintColor" name="blueColor"/>
@@ -91,10 +91,11 @@
                         <segue destination="eLf-LS-67G" kind="relationship" relationship="viewControllers" id="Bxz-lK-hEz"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7v-56-q7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="366.15384615384613" y="-593.60189573459718"/>
         </scene>
-        <!--Info View Controller-->
+        <!--About-->
         <scene sceneID="OlV-v1-AaV">
             <objects>
                 <viewController id="eLf-LS-67G" customClass="InfoViewController" customModule="Tasque" customModuleProvider="target" sceneMemberID="viewController">
@@ -102,16 +103,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pFQ-Di-Oip">
-                                <rect key="frame" x="16" y="231" width="358" height="530"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pFQ-Di-Oip">
+                                <rect key="frame" x="14" y="233" width="362" height="570"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut   enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea commodo consequat. Duis aute irure </mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut   enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea commodo consequat. Duis aute irure </string>
                                 <color key="textColor" name="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Welcome to Tasque!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LbJ-VV-9kq">
-                                <rect key="frame" x="16" y="82" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Welcome to Tasque!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LbJ-VV-9kq">
+                                <rect key="frame" x="16" y="120" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" name="textColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
@@ -121,7 +122,7 @@
                         <viewLayoutGuide key="safeArea" id="MJc-Xa-JsT"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="FRr-U0-M8X">
+                    <tabBarItem key="tabBarItem" title="About" id="FRr-U0-M8X">
                         <imageReference key="image" image="info.circle" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                 </viewController>
@@ -137,7 +138,7 @@
             <color red="0.082000002264976501" green="0.086000002920627594" blue="0.082000002264976501" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="blueColor">
-            <color red="0.24699999392032623" green="0.55199998617172241" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.24699999392032623" green="0.55299997329711914" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="cellColor">
             <color red="0.20399999618530273" green="0.19599999487400055" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
