@@ -6,6 +6,7 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -46,7 +47,62 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZX-H8-c6g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2000" y="-594.31279620853081"/>
+            <point key="canvasLocation" x="2042" y="-594"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="iG5-76-3pL">
+            <objects>
+                <viewController id="FlZ-Ik-LjC" customClass="SignUpViewController" customModule="Tasque" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wrY-at-s5v">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVX-4D-s1n">
+                                <rect key="frame" x="40" y="586" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEs-OJ-x2W">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="ETs-VJ-gwz">
+                                        <rect key="frame" x="64" y="283" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="lighterCellColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xda-4I-oqf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KEs-OJ-x2W" firstAttribute="top" secondItem="wrY-at-s5v" secondAttribute="top" id="24A-Fq-5Z9"/>
+                            <constraint firstItem="KEs-OJ-x2W" firstAttribute="leading" secondItem="wrY-at-s5v" secondAttribute="leading" id="SaY-Cq-Ou7"/>
+                            <constraint firstItem="KEs-OJ-x2W" firstAttribute="trailing" secondItem="wrY-at-s5v" secondAttribute="trailing" id="Z9K-qN-g3N"/>
+                            <constraint firstAttribute="bottom" secondItem="KEs-OJ-x2W" secondAttribute="bottom" id="fNo-Zh-Q0W"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQz-MD-L4F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053.8461538461538" y="143.60189573459715"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="X9C-Ai-rjx">
+            <objects>
+                <viewController id="POh-ho-fuf" customClass="LoginViewController" customModule="Tasque" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TdE-G3-aE3">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7qa-jL-U1A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6pK-L1-FVi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2043" y="144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WAX-Jk-hPB">
@@ -72,7 +128,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V4Q-3H-TMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1295.3846153846152" y="-593.60189573459718"/>
+            <point key="canvasLocation" x="1035" y="-594"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="KRz-dd-wAH">
@@ -83,7 +139,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="lighterCellColor"/>
-                        <color key="barTintColor" name="blueColor"/>
                         <color key="selectedImageTintColor" name="textColor"/>
                     </tabBar>
                     <connections>
@@ -93,7 +148,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G7v-56-q7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="366.15384615384613" y="-593.60189573459718"/>
+            <point key="canvasLocation" x="117" y="-594"/>
         </scene>
         <!--About-->
         <scene sceneID="OlV-v1-AaV">
@@ -103,10 +158,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pFQ-Di-Oip">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Hi 👋, my name is Ahmad Yasser, I'm an iOS developer and illustrator from Egypt 🇪🇬." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pFQ-Di-Oip">
                                 <rect key="frame" x="14" y="233" width="362" height="570"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut   enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea commodo consequat. Duis aute irure </string>
                                 <color key="textColor" name="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -128,12 +182,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLp-xM-gnT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1293.8461538461538" y="115.87677725118483"/>
+            <point key="canvasLocation" x="117" y="145"/>
         </scene>
     </scenes>
     <resources>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="twitter" width="273" height="221"/>
         <namedColor name="backgroundColor">
             <color red="0.082000002264976501" green="0.086000002920627594" blue="0.082000002264976501" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
@@ -149,5 +204,8 @@
         <namedColor name="textColor">
             <color red="0.74800002574920654" green="0.68000000715255737" blue="0.55299997329711914" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Item: Codable {
+class Item: NSObject, Codable {
     var title: String
     var done: Bool
     
