@@ -8,10 +8,13 @@
 import Foundation
 
 class HomeModel: NSObject {
-    @objc var dateModel = DateModel()
+    
+    let cacher = HomeCacheModel()
+    let checkMarker = HomeCheckMarkerModel()
+//    @objc var dateModel = DateModel()
     
     @objc dynamic var items = [Item]()
-    let cacher = HomeCacheModel()
+    
     
     override init() {
         super.init()
@@ -20,7 +23,7 @@ class HomeModel: NSObject {
     }
     
     func itemPressed(at index: Int) {
-        items[index].done.toggle()
+        items[index] = checkMarker.toggle(items[index])
     }
     
     func addTask(text: String) {
@@ -29,6 +32,14 @@ class HomeModel: NSObject {
         items.insert(newItem, at: 0)
         
         cacher.save(items: items)
+    }
+}
+
+class HomeCheckMarkerModel {
+    func toggle(_ item: Item) -> Item {
+        let mutatedItem = item
+        mutatedItem.done.toggle()
+        return mutatedItem
     }
 }
 

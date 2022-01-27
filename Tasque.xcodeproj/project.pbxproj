@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043A36B227A31B1F00BBAF5A /* CheckMarkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A36B127A31B1F00BBAF5A /* CheckMarkerTests.swift */; };
+		043A36B427A31B2F00BBAF5A /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A36B327A31B2F00BBAF5A /* CacheTests.swift */; };
+		043A36B627A31B3F00BBAF5A /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A36B527A31B3F00BBAF5A /* DateTests.swift */; };
+		043A36B827A31B6100BBAF5A /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A36B727A31B6100BBAF5A /* HomeTests.swift */; };
 		96549223278C0AD20019CDCB /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96549222278C0AD20019CDCB /* InfoViewController.swift */; };
 		96A8FFA4279F8FF20026F282 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8FFA3279F8FF20026F282 /* LoginViewController.swift */; };
 		96A8FFA6279F90120026F282 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8FFA5279F90120026F282 /* SignUpViewController.swift */; };
@@ -44,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043A36B127A31B1F00BBAF5A /* CheckMarkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMarkerTests.swift; sourceTree = "<group>"; };
+		043A36B327A31B2F00BBAF5A /* CacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
+		043A36B527A31B3F00BBAF5A /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
+		043A36B727A31B6100BBAF5A /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
 		96549222278C0AD20019CDCB /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		96A8FFA3279F8FF20026F282 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96A8FFA5279F90120026F282 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +100,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043A36B027A31B0F00BBAF5A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				043A36B127A31B1F00BBAF5A /* CheckMarkerTests.swift */,
+				043A36B327A31B2F00BBAF5A /* CacheTests.swift */,
+				043A36B527A31B3F00BBAF5A /* DateTests.swift */,
+				043A36B727A31B6100BBAF5A /* HomeTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		96A8FFA927A074D10026F282 /* Module */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +167,7 @@
 		96CE7C17278A259E0012FC25 /* TasqueTests */ = {
 			isa = PBXGroup;
 			children = (
+				043A36B027A31B0F00BBAF5A /* Home */,
 				96CE7C18278A259E0012FC25 /* TasqueTests.swift */,
 			);
 			path = TasqueTests;
@@ -348,7 +368,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043A36B227A31B1F00BBAF5A /* CheckMarkerTests.swift in Sources */,
 				96CE7C19278A259E0012FC25 /* TasqueTests.swift in Sources */,
+				043A36B827A31B6100BBAF5A /* HomeTests.swift in Sources */,
+				043A36B427A31B2F00BBAF5A /* CacheTests.swift in Sources */,
+				043A36B627A31B3F00BBAF5A /* DateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
