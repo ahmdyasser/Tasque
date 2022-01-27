@@ -8,6 +8,7 @@
 import Foundation
 
 class HomeModel: NSObject {
+    @objc var dateModel = DateModel()
     
     @objc dynamic var items = [Item]()
     let cacher = HomeCacheModel()
@@ -23,7 +24,7 @@ class HomeModel: NSObject {
     }
     
     func addTask(text: String) {
-        let newItem = Item(title: text, done: false)
+        let newItem = Item(title: text, done: false, date: Date())
         
         items.insert(newItem, at: 0)
         

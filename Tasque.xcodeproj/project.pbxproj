@@ -11,6 +11,7 @@
 		96A8FFA4279F8FF20026F282 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8FFA3279F8FF20026F282 /* LoginViewController.swift */; };
 		96A8FFA6279F90120026F282 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8FFA5279F90120026F282 /* SignUpViewController.swift */; };
 		96A8FFAC27A074F90026F282 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8FFAB27A074F90026F282 /* HomeModel.swift */; };
+		96B8BD5727A1B60200A40813 /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B8BD5627A1B60200A40813 /* DateModel.swift */; };
 		96CE7BFF278A259C0012FC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE7BFE278A259C0012FC25 /* AppDelegate.swift */; };
 		96CE7C01278A259C0012FC25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE7C00278A259C0012FC25 /* SceneDelegate.swift */; };
 		96CE7C03278A259C0012FC25 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE7C02278A259C0012FC25 /* HomeViewController.swift */; };
@@ -47,6 +48,7 @@
 		96A8FFA3279F8FF20026F282 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96A8FFA5279F90120026F282 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		96A8FFAB27A074F90026F282 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		96B8BD5627A1B60200A40813 /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
 		96CE7BFB278A259C0012FC25 /* Tasque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CE7BFE278A259C0012FC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96CE7C00278A259C0012FC25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				96CE7C02278A259C0012FC25 /* HomeViewController.swift */,
 				96A8FFAB27A074F90026F282 /* HomeModel.swift */,
+				96B8BD5627A1B60200A40813 /* DateModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				96A8FFA4279F8FF20026F282 /* LoginViewController.swift in Sources */,
 				96CE7C09278A259C0012FC25 /* Tasque.xcdatamodeld in Sources */,
 				96A8FFA6279F90120026F282 /* SignUpViewController.swift in Sources */,
+				96B8BD5727A1B60200A40813 /* DateModel.swift in Sources */,
 				96F91FC4278B1E5500D65C01 /* Item.swift in Sources */,
 				96A8FFAC27A074F90026F282 /* HomeModel.swift in Sources */,
 				96CE7C01278A259C0012FC25 /* SceneDelegate.swift in Sources */,

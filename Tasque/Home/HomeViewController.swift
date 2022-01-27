@@ -59,6 +59,7 @@ class HomeViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         model.itemPressed(at: indexPath.row)
         tableView.deselectRow(at: indexPath, animated: true)
+        tableView.reloadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {

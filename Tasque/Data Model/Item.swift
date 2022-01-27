@@ -10,9 +10,11 @@ import Foundation
 class Item: NSObject, Codable {
     var title: String
     var done: Bool
+    var date: Date
     
-    init(title: String, done: Bool) {
+    init(title: String, done: Bool, date: Date) {
         self.title = title
         self.done = done
+        self.date = date
     }
 }
