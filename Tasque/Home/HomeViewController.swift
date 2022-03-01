@@ -41,21 +41,17 @@ class HomeViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //
         let cell = tableView.dequeueReusableCell(withIdentifier: "tasqueCell", for: indexPath)
-//        let item = model.items[indexPath.row]
-//        let check = UIImageView(image: UIImage(systemName: "checkmark"))
+        let item = model.items[indexPath.row]
+        let check = UIImageView(image: UIImage(systemName: "checkmark"))
         
+        check.tintColor = UIColor.blue
+        cell.backgroundColor = UIColor.cell
+        cell.textLabel?.textColor = UIColor.text
+        tableView.backgroundColor = UIColor.background
+        cell.textLabel?.text = item.title
+        cell.accessoryView = item.done ? check : .none
         
-        
-//        check.tintColor = UIColor(named: K.Colors.blue)
-//        cell.backgroundColor = UIColor(named: K.Colors.cell)
-//        cell.textLabel?.textColor = UIColor(named: K.Colors.text)
-//        tableView.backgroundColor = UIColor(named: K.Colors.background)
-//        cell.textLabel?.text = item.title
-//        cell.accessoryView = item.done ? check : .none
-        
-        cell.model = model.items[indexPath.row]
         return cell
     }
     
@@ -75,7 +71,9 @@ class HomeViewController: UITableViewController {
             self.tableView.reloadData()
         })
     }
-
+    func setupCell() {
+        
+    }
 }
 
 

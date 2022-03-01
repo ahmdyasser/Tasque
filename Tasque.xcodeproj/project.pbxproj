@@ -11,6 +11,7 @@
 		043A36B427A31B2F00BBAF5A /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A36B327A31B2F00BBAF5A /* CacheTests.swift */; };
 		043A36B627A31B3F00BBAF5A /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A36B527A31B3F00BBAF5A /* DateTests.swift */; };
 		043A36B827A31B6100BBAF5A /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A36B727A31B6100BBAF5A /* HomeTests.swift */; };
+		96154F0D27CE957800A3787A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96154F0C27CE957800A3787A /* UIColor.swift */; };
 		96549223278C0AD20019CDCB /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96549222278C0AD20019CDCB /* InfoViewController.swift */; };
 		96A8FFA4279F8FF20026F282 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8FFA3279F8FF20026F282 /* LoginViewController.swift */; };
 		96A8FFA6279F90120026F282 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8FFA5279F90120026F282 /* SignUpViewController.swift */; };
@@ -52,6 +53,7 @@
 		043A36B327A31B2F00BBAF5A /* CacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
 		043A36B527A31B3F00BBAF5A /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		043A36B727A31B6100BBAF5A /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
+		96154F0C27CE957800A3787A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		96549222278C0AD20019CDCB /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		96A8FFA3279F8FF20026F282 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96A8FFA5279F90120026F282 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		96154F0B27CE956700A3787A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				96154F0C27CE957800A3787A /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		96A8FFA927A074D10026F282 /* Module */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 		96CE7BFD278A259C0012FC25 /* Tasque */ = {
 			isa = PBXGroup;
 			children = (
+				96154F0B27CE956700A3787A /* Extensions */,
 				96A8FFA927A074D10026F282 /* Module */,
 				96CE7BFE278A259C0012FC25 /* AppDelegate.swift */,
 				96CE7C00278A259C0012FC25 /* SceneDelegate.swift */,
@@ -351,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96CE7C03278A259C0012FC25 /* HomeViewController.swift in Sources */,
+				96154F0D27CE957800A3787A /* UIColor.swift in Sources */,
 				96CE7C32278A28AA0012FC25 /* K.swift in Sources */,
 				96CE7BFF278A259C0012FC25 /* AppDelegate.swift in Sources */,
 				96549223278C0AD20019CDCB /* InfoViewController.swift in Sources */,
@@ -552,6 +564,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,7 +574,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -581,6 +594,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,7 +604,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
